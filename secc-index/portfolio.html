@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" media="screen and (max-width:768px)" href="/css/mobile.css" />
+		<title>Portfolio</title>
+	</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html,
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	font-size: 1.8rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding-bottom: 50px;
+}
+
+h4 {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+
+p {
+	font-size: 1rem;
+	margin: 10px 0;
+	line-height: 1.7em;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.container {
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.large {
+	font-size: 20px;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 15px 40px;
+	letter-spacing: 1px;
+}
+
+.btn-outline {
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.btn-outline:hover {
+	background: #fff;
+	color: #000;
+}
+
+
+#navbar {
+	overflow: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#navbar a {
+	color: #000;
+}
+
+#navbar .logo {
+	float: left;
+	padding-top: 12px;
+}
+
+#navbar img {
+	height: 40px;
+}
+
+#navbar ul {
+	list-style: none;
+	float: right;
+}
+
+#navbar ul li {
+	float: left;
+}
+
+#navbar ul li a {
+	display: block;
+	padding: 20px;
+	text-align: center;
+}
+
+
+#showcase {
+	background: url('/img/showcase.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+	padding: 100px;
+}
+
+#showcase .btn {
+	margin-top: 250px;
+}
+
+
+#projects {
+	padding: 80px 0;
+}
+
+.projects-row {
+	display: flex;
+}
+
+.projects-row img {
+	width: 100%;
+}
+
+
+#about {
+	padding: 80px 0;
+	background: #f9f9f9;
+}
+
+.about-row {
+	display: flex;
+}
+
+.about-row-experience,
+.about-row-me {
+	width: 50%;
+	padding-left: 50px;
+}
+
+
+#contact {
+	padding: 80px 0;
+}
+
+.contact-row {
+	display: flex;
+}
+.contact-row-icon {
+	width: 33%;
+	text-align: center;
+}
+
+.contact-row-icon img {
+	height: 60px;
+}
+
+
+#mainfooter {
+	background: #f9f9f9;
+	text-align: center;
+	padding: 30px;
+}
+    </style>
+	<body>
+		<header id="mainheader">
+			<nav id="navbar">
+				<div class="container">
+					<a href="#mainheader" class="logo"><img src="../images/img/logo.png" alt="" /></a>
+					<ul>
+						<li><a href="#projects">Projectos</a></li>
+						<li><a href="#about">Sobre</a></li>
+						<li><a href="../index.html">Inicio</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div id="showcase">
+				<div class="container">
+					<a href="#projects" class="btn btn-outline">Projectos</a>
+				</div>
+			</div>
+		</header>
+
+		<section id="projects">
+			<div class="container">
+				<h2>Projectos</h2>
+				<div class="projects-row">
+					<div class="projects-row-detail">
+						<img src="../images/img/portfolio-1.jpg" alt="" />
+					</div>
+					<div class="projects-row-detail">
+						<img src="../images/img/portfolio-2.jpg" alt="" />
+					</div>
+					<div class="projects-row-detail">
+						<img src="../images/img/portfolio-3.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<div class="container">
+				<h2>Sobre</h2>
+				<div class="about-row">
+					<div class="about-row-experience">
+						<h4>Experiencia</h4>
+						<p class="large">Nada - 2010</p>
+						<p class="large">C en la facultad de Moreno - 2021</p>
+						<p class="large">Nada - 2022</p>
+					</div>
+					<div class="about-row-me">
+						<h4>Sobre mi</h4>
+						<p>
+							Nuevo en el múndo del código y las cosas me salen más mal que bien cuando hago las cosas sin videos.
+                            Ni siquiera me quedó la imagen principal allá arriba y no se linkea el sass a mi código.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container">
+				<h2>Contacto</h2>
+				<div class="contact-row">
+					<div class="contact-row-icon">
+						<img src="../images/img/icon-address.png" alt="" />
+						<p>Merlo</p>
+					</div>
+					<div class="contact-row-icon">
+						<img src="../images/img/icon-mail.png" alt="" />
+						<p>whiler.977@gmail.com</p>
+					</div>
+					<div class="contact-row-icon">
+						<img src="../images/img/icon-phone.png" alt="" />
+						<p>555-555-5555</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="mainfooter">
+			<div class="container">
+				<a href="https://twitter.com/lautaro?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false"
+					>Lautaro</a
+				>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</footer>
+	</body>
+</html>
