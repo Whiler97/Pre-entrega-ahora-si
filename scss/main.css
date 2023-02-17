@@ -85,6 +85,17 @@ header p {
   margin-top: 30px;
 }
 
+.menu ul {
+  margin: 20px;
+  padding: 20px;
+  background-color: hsl(300deg, 41%, 34%);
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
